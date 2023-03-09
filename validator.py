@@ -1,9 +1,6 @@
-import requests
-import os
+import requests, os, sys, json
 from hashlib import md5
 from tkinter import messagebox
-import sys
-import json
 
 def validator():
     usermac = md5(getmachinemac().encode()).hexdigest()
