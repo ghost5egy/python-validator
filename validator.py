@@ -33,5 +33,6 @@ def getmachinemac():
         command = "wmic bios get serialnumber"
     return os.popen(command).read().replace("\n","").replace("    ","").replace(" ","").replace("SerialNumber","")
 
-if validator():
+if __name__ == "__main__":
+    if validator():
         exit()
